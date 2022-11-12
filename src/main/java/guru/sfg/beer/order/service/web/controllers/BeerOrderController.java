@@ -71,4 +71,9 @@ public class BeerOrderController {
     public void pickupOrder(@PathVariable("customerId") UUID customerId, @PathVariable("orderId") UUID orderId){
         beerOrderService.pickupOrder(customerId, orderId);
     }
+    
+    @GetMapping
+    public void getBeerData() {
+    	
+    }
 }
